@@ -1,0 +1,23 @@
+/* Custom Django Admin Theme */
+#header {
+    background-color: #1e293b; /* dark blue header */
+    color: white;
+}
+
+#header h1 a {
+    color: #facc15 !important; /* yellow title */
+}
+
+.module h2 {
+    background: #3b82f6; /* blue section headers */
+    color: white;
+}
+
+div.breadcrumbs {
+    background: #475569;
+    color: white;
+}
+
+a:link, a:visited {
+    color: #0ea5e9;
+}

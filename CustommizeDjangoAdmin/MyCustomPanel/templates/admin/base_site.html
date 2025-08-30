@@ -1,0 +1,37 @@
+{% extends "admin/base_site.html" %}
+{% block title %}Brainy Beam Admin{% endblock %}
+
+{% block extrastyle %}
+    <style>
+        /* Internal CSS for theme */
+        body {
+            background: #22223b;
+        }
+        #header {
+            background: red !important; /* Changed to red */
+        }
+        #site-name, #site-name a, .branding h1, .branding h1 a {
+            color: red !important; /* Force accent color to red */
+        }
+        .module h2, .module caption, .grp-module h2 {
+            color: #f2e9e4;
+        }
+        .dashboard-module, .module {
+            background: #9a8c98;
+        }
+        .button, input[type=submit], input[type=button] {
+            background: #c9ada7;
+            color: #22223b;
+        }
+    </style>
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name">
+        <img src="{% static 'images/shopfy_icon.ico' %}" alt="Logo" style="height:32px;vertical-align:middle;">
+        Brainy Beam Admin
+    </h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+{% if custom_head %}{{ custom_head|safe }}{% endif %}

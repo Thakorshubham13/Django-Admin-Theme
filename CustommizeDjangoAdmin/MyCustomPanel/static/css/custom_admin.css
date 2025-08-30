@@ -1,0 +1,31 @@
+/* Force Light Mode */
+:root {
+    color-scheme: light !important;
+}
+
+/* Header */
+#header {
+    background-color: #1e293b !important; /* dark blue header */
+    color: white !important;
+}
+
+#header h1 a {
+    color: #facc15 !important; /* yellow title */
+}
+
+/* Module headers */
+.module h2 {
+    background: #3b82f6 !important; /* blue section headers */
+    color: white !important;
+}
+
+/* Breadcrumbs */
+div.breadcrumbs {
+    background: #475569 !important;
+    color: white !important;
+}
+
+/* Links */
+a:link, a:visited {
+    color: #0ea5e9 !important;
+}
